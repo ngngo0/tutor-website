@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title> Tutor Website</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div id="logo">
+                    <h1> Tutoring Website</h1>
+                </div>
+                <ul>
+                    <li>
+                        <a href="/pages/About.HTML">About</a>
+                    </li>
+                    <li>
+                        <a href="/pages/Contact.HTML">Contact Us</a>
+                    </li>
+
+                    <li>
+                        <button>Login</button>
+                    </li>
+                    <li>
+                        <button>Sign Up</button>
+                    </li>
+
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div id="picture_holder">
+                <!-- https://www.istockphoto.com/photo/original-wide-format-background-image-on-autumn-theme-with-space-for-text-gm1556220067-526827878 -->
+                <h2 id="welcome_banner">Find a UCSD Tutor Here!</h2>
+            </div>
+            <form>
+                <fieldset>
+                    <label for="class_dept"> What major is this class in?</label>
+                    <input list="dept_list" id="class_dept">
+                    <datalist id="dept_list">
+                        <option value="CSE">
+                        <option value="MATH">
+                        <option value="ECE">
+                    </datalist>
+                </fieldset>
+                <fieldset>
+                    <label for="class_number">What is the class number?</label>
+                    <input type="number">
+                </fieldset>
+                <button type="submit"> Search for tutors</button>
+            </form>
+
+            <section id="tutor_profiles">
+                <tutor-profiles>
+                    Please turn on Javascript so that you can see the tutors available.
+                </tutor-profiles>
+            </section>
+        </main>
+    </body>
+    <script src="script.js"></script>
+</html>
